@@ -1,3 +1,6 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,22 +8,26 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
+    background-image: url('/media/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.9);
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
+    padding: 20px 0;
     border-bottom: #4CAF50 3px solid;
 }
 
@@ -29,65 +36,49 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #4CAF50;
 }
 
 header ul {
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 header li {
-    display: inline;
-    padding: 0 20px 0 20px;
+    margin: 0 15px;
 }
 
 header h1 {
-    float: left;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-header nav {
-    float: right;
-    margin-top: 10px;
+main {
+    padding: 20px 0;
 }
 
-header .highlight, header .current a {
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #ccc;
-    font-weight: bold;
-}
-
-#about, #3dprinting {
-    padding: 50px 0;
-    background: #f4f4f4;
-}
-
-#about h2, #3dprinting h2 {
-    color: #4CAF50;
+main h2 {
+    font-size: 36px;
     margin-bottom: 20px;
-}
-
-footer {
-    padding: 20px;
-    margin-top: 20px;
-    color: #ffffff;
-    background-color: #333;
     text-align: center;
 }
 
-@media(max-width: 768px) {
-    header h1,
-    header nav,
-    header nav li {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
+main p {
+    font-size: 18px;
+    text-align: center;
+}
 
-    header {
-        padding-bottom: 20px;
-    }
+footer {
+    background: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: #4CAF50 3px solid;
+    margin-top: 20px;
 }
